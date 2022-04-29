@@ -7,6 +7,8 @@
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<span id="more"></span>
+
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
@@ -17,5 +19,30 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>NexT详细配置</title>
+    <url>/2022/04/29/Hexo%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Just-some-text"><a href="#Just-some-text" class="headerlink" title="Just some text"></a>Just some text</h1><p>hhh</p>
+]]></content>
+      <categories>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NexT个性化配置</title>
+    <url>/2022/04/29/NexT%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Just-some-text"><a href="#Just-some-text" class="headerlink" title="Just some text"></a>Just some text</h1><p>hhh</p>
+]]></content>
+      <categories>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
   </entry>
 </search>

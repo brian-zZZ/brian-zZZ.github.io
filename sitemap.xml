@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://brian-zzz.github.io/2022/04/29/NexT%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2022-04-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brian-zzz.github.io/2022/04/29/Hexo%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2022-04-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brian-zzz.github.io/2022/04/27/hello-world/</loc>
+    
+    <lastmod>2022-04-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brian-zzz.github.io/categories/index.html</loc>
+    
+    <lastmod>2022-04-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://brian-zzz.github.io/tags/index.html</loc>
+    
+    <lastmod>2022-04-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://brian-zzz.github.io/about/index.html</loc>
     
     <lastmod>2022-04-29</lastmod>
@@ -19,15 +64,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://brian-zzz.github.io/2022/04/27/hello-world/</loc>
-    
-    <lastmod>2022-04-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://brian-zzz.github.io/</loc>
@@ -37,6 +73,27 @@
   </url>
 
   
+  <url>
+    <loc>https://brian-zzz.github.io/tags/Markdown/</loc>
+    <lastmod>2022-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://brian-zzz.github.io/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2022-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://brian-zzz.github.io/categories/Misc/</loc>
+    <lastmod>2022-04-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

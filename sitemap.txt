@@ -1,4 +1,11 @@
+https://brian-zzz.github.io/2022/04/29/NexT%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/
+https://brian-zzz.github.io/2022/04/29/Hexo%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/
+https://brian-zzz.github.io/2022/04/27/hello-world/
+https://brian-zzz.github.io/categories/index.html
+https://brian-zzz.github.io/tags/index.html
 https://brian-zzz.github.io/about/index.html
 https://brian-zzz.github.io/photos/index.html
-https://brian-zzz.github.io/2022/04/27/hello-world/
 https://brian-zzz.github.io/
+https://brian-zzz.github.io/tags/Markdown/
+https://brian-zzz.github.io/tags/%E5%BB%BA%E7%AB%99/
+https://brian-zzz.github.io/categories/Misc/

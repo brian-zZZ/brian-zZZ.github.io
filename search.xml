@@ -1,6 +1,388 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>&lt;建站系列-一&gt;  GitHub+Hexo建站</title>
+    <url>/2022/05/02/GitHub-Hexo%E5%BB%BA%E7%AB%99/</url>
+    <content><![CDATA[<blockquote>
+<p>前言：</p>
+<p><code>GitHub</code>本身自带的<code>Jekyll</code>可以直接构建最简单的个人网站，但定制性较差，而<code>Hexo</code>提供更丰富的个性化定制。<code>GitHub+Hexo</code> is all you need !</p>
+</blockquote>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><span id="more"></span>
+
+<h2 id="GitHub建仓库"><a href="#GitHub建仓库" class="headerlink" title="GitHub建仓库"></a>GitHub建仓库</h2><p>在GitHub创建一个仓库：<strong>你的GitHub账号名.github.io</strong>。注意：一定要严格对应。</p>
+<blockquote>
+<p>若是嫌Hexo麻烦，可直接在刚创建的仓库，点选<code>Setting -&gt; Pages -&gt; Choose a theme -&gt; select theme</code>，选择Jekyll提供的几款内嵌主题之一完成建站。</p>
+</blockquote>
+<hr>
+<h2 id="Git关联GitHub账号"><a href="#Git关联GitHub账号" class="headerlink" title="Git关联GitHub账号"></a>Git关联GitHub账号</h2><p>安装Git并通过密钥关联GitHub账号，对于常用GitHub的人应该很熟悉，并且已经提前关联，此步可忽略。若尚未，参见博文<a href="https://lolitasian.blog.csdn.net/article/details/79094257">Git教程 SSH keys配置</a>。关联账号是为了后面将Hexo搭建的网站部署到GitHub仓库。</p>
+<hr>
+<h2 id="搭建环境并安装Hexo"><a href="#搭建环境并安装Hexo" class="headerlink" title="搭建环境并安装Hexo"></a>搭建环境并安装Hexo</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>Hexo基于Node.js，需要先下载安装<a href="https://nodejs.org/en/download/">Node.js</a>，注意：安装程序时需要选择dependecies，否则会安装VS和Python等。安装完后，在命令行输入<code>node -v</code> ，若输出版本号则安装正常。Node.js会自带npm的安装，在命令行输入<code>npm -v</code> ，若输出版本号则安装正常。</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>搭建好环境后就可以安装Hexo了。Hexo本质是一个搭建个人博客网站的框架，基于这个框架，先把网站在本地搭建好，然后部署到远端。在本地新建一个文件夹，比如<code>MyBlog</code> ,用来存放Hexo搭建的网页文件。</p>
+<p>在新建的<code>MyBlog</code>文件夹下，鼠标右键，选Git Bash Here，或者直接打开Git然后转移路径到<code>MyBlog</code>。输入以下命令，安装Hexo：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完Hexo后，初始化本地博客，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，会在<code>MyBlog</code>路径下自动创建一个文件夹<code>MyBlog/blog</code>，这个文件夹就是Hexo的本地网站路径，以后Hexo的操作都发生在这个文件夹下。</p>
+<p>将Git Bash窗口的路径转移到<code>MyBlog/blog</code>，进行后续操作。（<em>可直接输入<code>MyBlog/blog</code>绝对路径，也可以在<code>MyBlog/blog</code>下右键选Git Bash Here。</em>）</p>
+<p>为检测本地网站雏形初始化正确，可输入（命令含义见注释）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n test_init_site <span class="comment"># 新建(new)一篇名为test_init_site的博客(post)</span></span><br><span class="line">hexo g <span class="comment"># 生成(generate) 网站</span></span><br><span class="line">hexo s <span class="comment"># 打开本地服务器(server)</span></span><br></pre></td></tr></table></figure>
+
+<p>然后在浏览器打开本地端口地址：<code>localhost:4000</code>。若能加载成功说明初始化正确。初始化网站如下图：</p>
+<p><img src="https://s2.loli.net/2022/05/02/KAkVbWwin9sumZq.png" alt="init_site.png"></p>
+<hr>
+<h2 id="推送网站到GitHub仓库"><a href="#推送网站到GitHub仓库" class="headerlink" title="推送网站到GitHub仓库"></a>推送网站到GitHub仓库</h2><p>本地搭建完网站后推送到GitHub即可被所有人访问。在推送网站前，需要配置站点信息，即修改<code>MyBlog/blog/_config.yml</code>文件。</p>
+<p>用写字板或其它工具打开<code>_config.yml</code>文件，滑动至文件底端，关联部署仓库为第一步创建的GitHub仓库，将<code># Deployment</code>项配置为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/你的账号名/你的账号名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>完成部署配置后，再安装Git部署插件，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以输入以下命令推送到GitHub仓库了：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清除缓存，以免网站信息冲突</span></span><br><span class="line">hexo g</span><br><span class="line">hexo d <span class="comment"># 部署(deploy)</span></span><br></pre></td></tr></table></figure>
+
+<p>由于国内访问GitHub不稳定，推送可能也不稳定。推送完成后，等待GitHub同步更新，大概30s。最后，在浏览器输入以仓库名为url的网页，即 <code>https://xxx.github.io</code>，即可访问你的上线博客主页！</p>
+<hr>
+<blockquote>
+<p>后话：</p>
+<p>是不是很amazing，很easy！爱了有没有！Hexo帮我们自动完成网站的搭建和渲染，无需理解背后javascript实现，只要我们完成配置即可，使得我们可以把关注重点放到博客内容上。妙啊！</p>
+</blockquote>
+<p>本博客已同步至<a href="https://www.zhihu.com/people/brainzzz-52">笔者知乎</a>，<a href="https://zhuanlan.zhihu.com/p/508458332">文章链接</a>，欢迎关注。</p>
+<p>Hexo的使用和个性化配置见下一篇博客文章。</p>
+<hr>
+<p>Reference: <a href="https://zhuanlan.zhihu.com/p/26625249">知乎文章：GitHub+Hexo搭建个人网站详细教程</a></p>
+]]></content>
+      <categories>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;建站系列-四&gt; Hexo博客添加音乐界面</title>
+    <url>/2022/05/03/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E7%95%8C%E9%9D%A2/</url>
+    <content><![CDATA[<blockquote>
+<p>前言：</p>
+<p>作为离开音乐没法活的人，给自己的博客添加一个音乐播放界面是再好不过了。一方面自己随时可以在线听，另一方面可以让访问博客的友友边读博文边欣赏，还有，重要的是，咱逼格要够，懂吧！音乐播放器往主页一放，咱就是说瞬间逼格拉满好吧，嘿嘿~</p>
+</blockquote>
+<p>以网易云音乐为例，其它同理。</p>
+<p><strong>P.S. 作为准9级老网抑选手 (doge，欢迎友友互关分享音乐嗷</strong>。<a href="https://music.163.com/#/user/home?id=300949291">网易云账号</a>，或在<a href="brian-zzz.github.io">博客</a>侧边栏社交链接获取。</p>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><span id="more"></span>
+
+<h2 id="获取网易云界面HTML代码"><a href="#获取网易云界面HTML代码" class="headerlink" title="获取网易云界面HTML代码"></a>获取网易云界面HTML代码</h2><p>如第二篇博文所说的，Hexo支持解析Markdown文件中的HTML代码，所以可以通过插入音乐界面HTML代码来生成音乐界面。我们可以构建单曲界面，也可以构建歌单界面，分别介绍如下。</p>
+<ul>
+<li>单曲：打开网页版网易云音乐，播放要插入的单曲，点击<code>生成外链播放器</code>，这可以调用云音乐提供的<code>iframe插件</code>编辑器，调整尺寸，复制底部<code>HTML代码</code>，如下图：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/05/03/koAI8KYtVOLdCyz.png" alt="netease_single.png"></p>
+<ul>
+<li>歌单：打开网页版网易云音乐，打开要插入的歌单，我们要获取的是<strong>歌单id</strong>。打开歌单时，浏览器地址栏<code>playlist?id=</code>后就是歌单id，复制，黏贴替换下面<code>HTML代码</code>中的<code>id</code>：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--网易云音乐插件--&gt;</span><br><span class="line">&lt;!-- require APlayer --&gt;</span><br><span class="line">&lt;<span class="built_in">link</span> rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;!-- require MetingJS--&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js&quot;</span>&gt;&lt;/script&gt; </span><br><span class="line">&lt;!--网易云playlist外链地址--&gt;   </span><br><span class="line">&lt;meting-js</span><br><span class="line">    server=<span class="string">&quot;netease&quot;</span></span><br><span class="line">    <span class="built_in">type</span>=<span class="string">&quot;playlist&quot;</span> </span><br><span class="line">    <span class="built_in">id</span>=<span class="string">&quot;110119120&quot;</span></span><br><span class="line">    mini=<span class="string">&quot;false&quot;</span></span><br><span class="line">    fixed=<span class="string">&quot;false&quot;</span></span><br><span class="line">    list-folded=<span class="string">&quot;true&quot;</span></span><br><span class="line">    autoplay=<span class="string">&quot;false&quot;</span></span><br><span class="line">    volume=<span class="string">&quot;0.4&quot;</span></span><br><span class="line">    theme=<span class="string">&quot;#FADFA3&quot;</span></span><br><span class="line">    order=<span class="string">&quot;list&quot;</span></span><br><span class="line">    loop=<span class="string">&quot;all&quot;</span></span><br><span class="line">    preload=<span class="string">&quot;auto&quot;</span></span><br><span class="line">    mutex=<span class="string">&quot;true&quot;</span>&gt;</span><br><span class="line">&lt;/meting-js&gt;</span><br></pre></td></tr></table></figure>
+
+<p>由于网易云禁用了一键式歌单外链，所以我们歌单界面用第三方插件<code>Aplayer</code>和<code>Metingjs</code>实现，<code>Aplayer</code>是一个功能强大的HTML5音乐播放器，而<code>Metingjs</code>基于<code>Aplayer</code>进行封装[1]，两者已集成到NexT插件<code>pjax</code>中。<br><code>Metingjs</code>封装控制语句参数见下表，可按需调整：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>默认</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id(编号)</td>
+<td>require</td>
+<td>歌曲ID &#x2F;播放列表ID &#x2F;专辑ID &#x2F;搜索关键字</td>
+</tr>
+<tr>
+<td>server(平台)</td>
+<td>require</td>
+<td>音乐平台：netease，tencent，kugou，xiami，baidu</td>
+</tr>
+<tr>
+<td>type（类型）</td>
+<td>require</td>
+<td>song，playlist，album，search，artist</td>
+</tr>
+<tr>
+<td>auto（支持类种 类）</td>
+<td>options</td>
+<td>音乐链接，支持：netease，tencent，xiami</td>
+</tr>
+<tr>
+<td>fixed（固定模式）</td>
+<td>false</td>
+<td>启用固定模式</td>
+</tr>
+<tr>
+<td>mini（迷你模式）</td>
+<td>false</td>
+<td>启用迷你模式</td>
+</tr>
+<tr>
+<td>autoplay（自动播放）</td>
+<td>false</td>
+<td>音频自动播放</td>
+</tr>
+<tr>
+<td>theme(主题颜色)</td>
+<td>#2980b9</td>
+<td>默认#2980b9</td>
+</tr>
+<tr>
+<td>loop（循环）</td>
+<td>all</td>
+<td>播放器循环播放，值：“all”，one”，“none”</td>
+</tr>
+<tr>
+<td>order(顺序)</td>
+<td>list</td>
+<td>播放器播放顺序，值：“list”，“random”</td>
+</tr>
+<tr>
+<td>preload(加载)</td>
+<td>auto</td>
+<td>值：“none”，“metadata”，“’auto”</td>
+</tr>
+<tr>
+<td>volume（声量）</td>
+<td>0.7</td>
+<td>默认音量，请注意播放器会记住用户设置，用户自己设置音量后默认音量将不起作用</td>
+</tr>
+<tr>
+<td>mutex（限制）</td>
+<td>true</td>
+<td>防止同时播放多个玩家，在该玩家开始播放时暂停其他玩家</td>
+</tr>
+<tr>
+<td>lrc-type（歌词）</td>
+<td>0</td>
+<td>歌词显示</td>
+</tr>
+<tr>
+<td>list-folded（列表折叠）</td>
+<td>false</td>
+<td>指示列表是否应该首先折叠</td>
+</tr>
+<tr>
+<td>list-max-height（最大高度）</td>
+<td>340px</td>
+<td>列出最大高度</td>
+</tr>
+<tr>
+<td>storage-name（储存名称）</td>
+<td>metingjs</td>
+<td>存储播放器设置的localStorage键</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="将HTML代码嵌入到侧边栏"><a href="#将HTML代码嵌入到侧边栏" class="headerlink" title="将HTML代码嵌入到侧边栏"></a>将HTML代码嵌入到侧边栏</h2><p>打开<code>source/themes/hexo-theme-next-8.11.0/layout/_macro/sidebar.njk</code>文件，这是侧边栏图层源文件，把之前生成的HTML代码插入要想要显示的位置。<strong>注意：插入不同位置会显示在侧边栏不同位置，我们可以精确定位</strong>，位置对应关系如下图：</p>
+<p><img src="https://s2.loli.net/2022/05/03/zfS2QtXIlaG968M.png" alt="sidebar_pos.png"></p>
+<p>把代码插入到指定位置，即可在侧边栏对应位置嵌入音乐播放界面</p>
+<h2 id="全局设置"><a href="#全局设置" class="headerlink" title="全局设置"></a>全局设置</h2><p>为实现全局播放，也即是说播放进度不会随着网页的切换而中断，需要进行全局说明。</p>
+<p>打开<code>source/themes/hexo-theme-next-8.11.0/layout/_layout.njk</code>文件，复制以下语句到<code>&lt;head&gt;</code>标签后</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line"> &lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>最后，开启NexT主题<code>pjax</code>插件，修改主题配置文件，令<code>pjax: true</code></p>
+<hr>
+<blockquote>
+<p>后话：</p>
+<p>经过简单的几个步骤，我们为博客添加了拉风的音乐播放界面，终于可以愉快地点看博客边听歌了，妙啊！</p>
+</blockquote>
+<blockquote>
+<p><strong>碎碎念：终于，&lt;建站系列&gt;的四篇博文全部更完，Markdown码了字接近6000字，加上配图，并且一步步重新搭建，花了我两天时间，属实不易。写这个系列一方面是记录建站过程，方便日后查阅；另一方面是想通过一套详细易读的教材让大家少走弯路，快速上手。对这套教程，我有信心说是较为全面且易读的，基本把重新建站的各个方面都覆盖到了，直接跟着一步步走就可以了，不用知乎、CSDN、Google、官网到处翻来翻去。希望能给你带来帮助♥~</strong></p>
+</blockquote>
+<p>本博客已同步至<a href="https://www.zhihu.com/people/brainzzz-52">笔者知乎</a>，<a href="https://zhuanlan.zhihu.com/p/508805845">文章链接</a>，欢迎关注。</p>
+<hr>
+<p>Reference: [1] <a href="https://blog.csdn.net/qq_39800978/article/details/109407258">CSDN博文——Hexo博客设置背景音乐</a></p>
+]]></content>
+      <categories>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>建站</tag>
+        <tag>NexT</tag>
+        <tag>个性化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;建站系列-二&gt; Hexo的使用和个性化配置</title>
+    <url>/2022/05/02/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>前言：</p>
+<p>上一篇博文中我们基于GitHub和Hexo搭建了一个toy主页。接下来介绍Hexo的基本使用方法，包括新博文的创作、给博文打标签分类，以及Hexo个性化配置。掌握本篇博文后你将可以完成日常的博客管理。</p>
+</blockquote>
+<h1 id="Hexo的个性化配置"><a href="#Hexo的个性化配置" class="headerlink" title="Hexo的个性化配置"></a>Hexo的个性化配置</h1><span id="more"></span>
+
+<p>先进行Hexo的个性化配置，Hexo的使用有赖于齐全的配置。</p>
+<p>修改<strong>站点</strong>配置文件<code>MyBlog/blog/_config.yml</code>以进行配置。</p>
+<h2 id="安装个性化主题-NexT"><a href="#安装个性化主题-NexT" class="headerlink" title="安装个性化主题 NexT"></a>安装个性化主题 NexT</h2><p>首先更换主题，Hexo默认的主题功能非常有限，也不够美观。以Hexo最受欢迎的主题NexT为例。Hexo官网主题专栏<a href="https://hexo.io/themes/">Themes | Hexo</a>提供了接近400套第三方主题，可根据个人喜好选择，点击选定主题会弹出该主题官网页面。附上NexT最新版本8.11.0<a href="https://github.com/next-theme/hexo-theme-next/archive/refs/tags/v8.11.0.zip">下载链接</a>。</p>
+<p>下载完成后解压，把解压后的文件夹<code>hexo-theme-next-8.11.0</code>移动到<code>MyBlog/blog/themes/</code>路径下。</p>
+<p>打开<strong>站点</strong>配置文件<code>_config.yml</code>，将<code># Extensions</code>项的<code>theme</code>修改为解压文件夹名:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theme: hexo-theme-next-8.11.0</span><br></pre></td></tr></table></figure>
+
+<p>NexT提供四种不同样式，默认是Muse，更改为Pisces，Pisces是带有侧边栏的双栏样式，非常简洁清新。更改方法：</p>
+<p>打开<strong>主题</strong>配置文件<code>MyBlog/blog/themes/hexo-theme-next-8.11.0/_config.yml</code>，找到<code># Scheme Settings</code>项，把Muse用<code># </code>备注掉，把Pisces前的<code># </code>删除。（选其它样式同理）</p>
+<p><code>hexo g; hexo s</code>更新再打开<code>4000</code>端口即可查看更换后效果，如下图：</p>
+<p><img src="https://s2.loli.net/2022/05/02/4wbfyJE8IpXd1QF.png" alt="init_NexT.png"></p>
+<hr>
+<h2 id="进行个性化设置"><a href="#进行个性化设置" class="headerlink" title="进行个性化设置"></a>进行个性化设置</h2><p>修改站点主页显示信息<code># Site</code>项，包括<code>title, subtitle , description, author, language, timezone</code>等，很直观。值得注意的是，timezone没有北京时间，可以设置为上海时间<code>Asia/Shanghai</code>。</p>
+<p>另外其它项也可根据个人需要修改，比如<code># Home page setting</code>项的<code>index_generator</code>可以设置博客主页每页显示的文章数量以及排序规则。自行阅读，不再细说。</p>
+<hr>
+<hr>
+<h1 id="Hexo的使用"><a href="#Hexo的使用" class="headerlink" title="Hexo的使用"></a>Hexo的使用</h1><h2 id="熟悉基本命令"><a href="#熟悉基本命令" class="headerlink" title="熟悉基本命令"></a>熟悉基本命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g <span class="comment"># generate</span></span><br><span class="line">hexo s <span class="comment"># server</span></span><br><span class="line">hexo d <span class="comment"># deploy</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo n xxx <span class="comment"># new</span></span><br></pre></td></tr></table></figure>
+
+<p>以上是常用的5条命令，使用的要领是：</p>
+<p>当修改了配置、更新了博文 或是更改了其它信息，<code>hexo g</code>将根据更改生成新的网页，通过<code>hexo s</code>可以在本地<code>localhost:4000</code>端口检验网页是否与预期一致，若确认无误则可部署到远端，在部署前以防旧的网页与新生成的网页冲突先清除缓存<code>hexo clean</code>，然后<code>hexo d</code>部署即可。</p>
+<p>值得注意的是，并不是每次更改了本地信息就需要关闭当前<code>4000</code>端口然后重新<code>hexo g</code>和<code>hexo s</code>查看更改，事实上除了修改<strong>站点</strong>配置文件<code>_config.yml</code>外其它时候都可以实时更新到当前监听的端口。</p>
+<p>所以建议让本地<code>4000</code>端口处于后台开启状态，完成你的更改，实时在浏览器刷新，确认无误后即可愉快地推送到GitHub远端仓库啦，嘿嘿。</p>
+<hr>
+<h2 id="新博文的创作"><a href="#新博文的创作" class="headerlink" title="新博文的创作"></a>新博文的创作</h2><p>首先为博文新建一个post，输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n new_post <span class="comment"># 新建一个名为new_post的post</span></span><br></pre></td></tr></table></figure>
+
+<p>这会在在<code>source/_posts</code>路径下自动创建一个名为new_post的Markdown文件，形如<code>MyBlog/blog/source/_posts/new_post.md</code>这个Markdown文件就是博文的源文件，博文显示的内容都来自于它，我们在它上面完成博文写作。</p>
+<p>Markdown是一种轻量级标记语言，功能强大。<strong>Markdown进阶语法及编辑器推荐</strong>见笔者博客，左侧搜索框搜索即可。</p>
+<hr>
+<h2 id="打标签分类"><a href="#打标签分类" class="headerlink" title="打标签分类"></a>打标签分类</h2><p>标签 <code>Tags</code>, 类别<code>Categories</code>是对博文的标记，养成的好的标记习惯有利于快速分类检索。Hexo打标签分类需要两个步骤：</p>
+<h3 id="创建独立Page"><a href="#创建独立Page" class="headerlink" title="创建独立Page"></a>创建独立Page</h3><p>为标签和类别分别创建独立的<code>page</code>，这会在<code>source</code>路径下分别创建两个文件夹，并且文件夹内部都有一个Markdown文件<code>index.md</code>。输入以下命令创建：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n page tags</span><br><span class="line">hexo n page categories</span><br></pre></td></tr></table></figure>
+
+<h3 id="编辑index-md"><a href="#编辑index-md" class="headerlink" title="编辑index.md"></a>编辑index.md</h3><p>编辑<code>index.md</code>，让博文中的标签和类别自动关联到对应的Page内。本质上<code>index.md</code>也是博文，不过它单独显示在<code>Tags</code>或者<code>Categories</code>下，用来充当检索页面，所以应该关闭该页面下评论功能。具体而言，只需在顶部注释区添加两行（以tags为例）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span> <span class="comment"># 加入type使post自动关联检索</span></span><br><span class="line">comments: <span class="literal">false</span> <span class="comment"># 关闭评论</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="在博文中指定标签-x2F-类别"><a href="#在博文中指定标签-x2F-类别" class="headerlink" title="在博文中指定标签&#x2F;类别"></a>在博文中指定标签&#x2F;类别</h3><p>在博文顶部注释区添加标签&#x2F;类别列表，即完成该博文的标记：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tags: [tag1, tag2] <span class="comment"># 多个tag用[]括起来，用逗号分隔</span></span><br><span class="line">categories: 类别1 <span class="comment"># 单个看直接写，也可用[]括起来</span></span><br></pre></td></tr></table></figure>
+
+<p>在指定标签&#x2F;类别后，编辑完博文并发布后，Hexo会自动关联，可在<code>Tags</code>和<code>Categories</code>页面看到所有标签&#x2F;类别。</p>
+<p>注：<code>Tags</code>和<code>Categories</code>页面可通过主页左侧菜单进入，NexT默认是不开启菜单的，开启方法见下一篇博文。</p>
+<hr>
+<h2 id="限制文章预览长度"><a href="#限制文章预览长度" class="headerlink" title="限制文章预览长度"></a>限制文章预览长度</h2><p>NexT默认主页预览显示完整文章，当文章很长时会占据相当的版面，影响下一篇文章的预览。对于最新版<code>NexT==8.11.0</code>，有两种方法控制文章预览：</p>
+<p>第一种，给文章添加摘要描述。那么预览只会显示描述，简明扼要。只需要在博文的顶部注释区添加<code>description</code>，比如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">description: 这是文章概括描述，预览只会显示我，不会显示文章具体内容</span><br></pre></td></tr></table></figure>
+
+<p>第二种，手动指定文章可预览到的位置。在文章想要被预览到的位置插入以下语句，那么文章预览会被截断到只显示该语句前的内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>第二种方法其实不是Markdown语句，而是HTML语句，但是Hexo可以解析并截断显示。</p>
+<hr>
+<blockquote>
+<p>后话：</p>
+<p>文章以NexT主题为例子，其它主题可能有细微差别，但原理大同小异，本质上是修改_config.yml修改配置。快去实践，完成一篇有意思的博文吧！</p>
+</blockquote>
+<p>本博客已同步至<a href="https://www.zhihu.com/people/brainzzz-52">笔者知乎</a>，<a href="https://zhuanlan.zhihu.com/p/508535407">文章链接</a>，欢迎关注。</p>
+<p><strong>NexT主题的个性化配置</strong>见下一篇博客文章。</p>
+]]></content>
+      <categories>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>建站</tag>
+        <tag>个性化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;建站系列-三&gt; NexT主题的个性化配置</title>
+    <url>/2022/05/02/NexT%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>前言：</p>
+<p>前两篇博文我们搭建了个人博客主页，并掌握了常用的博客管理知识，接下来介绍NexT主题的个性化配置，服务博客主页更丰富的功能，真正做到个性化，与众不同。Ok， let’s  get started !</p>
+</blockquote>
+<h1 id="基础自定义"><a href="#基础自定义" class="headerlink" title="基础自定义"></a>基础自定义</h1><span id="more"></span>
+
+<p>修改主题配置文件<code>_config.yml</code>对应项，完成基础自定义。</p>
+<ul>
+<li><p><code># Site Information Settings</code>项：<code>favicon</code>是网站图标，可更改；<code>license</code>及<code>size</code>,<code>sidebar</code>定义博客知识许可证，<code>sidebar: true</code>可以在侧边栏显示。</p>
+</li>
+<li><p><code># Menu Settings</code>项：菜单栏设置。将菜单栏设置前的注释<code># </code>去掉即可在侧边栏显示，建议把<code>about, tags, categories, archives</code>显示出来。上一篇博文中介绍的打标签分类可在<code>tags</code>和<code>categories</code>两项分别找到。每个菜单项<code>||</code>右侧设置的是该菜单项的图标，Hexo用的是<a href="http://www.fontawesome.com.cn/faicons">Font Awesome Icon</a>，每个icon对应一个名称，如heart对应🖤，可以根据个人喜好随意修改，芜湖~！最后，设置<code>icons: true</code>即可显示菜单项图标，还可设置<code>badges: true</code>显示每个菜单项的统计数，比如<code>tags</code>和<code>categories</code>的数目。</p>
+</li>
+<li><p><code># Sidebar Settings</code>项：侧边栏设置。可设置侧边栏的位置、宽度等，<code>avatar</code>的<code>url</code>可设置个人头像，将头像图片放到<code>source</code>路径下(也可以再创建子路径，如<code>source/images/</code>)，然后设置<code>url: me.jpg</code>(或者<code>url: /images/me.jpg</code>)；<code># Social Links</code>可以设置社交账号链接，比如GitHub，还可以手动添加国内社交账号，比如知乎，同样是用Font Awesome Icon做图标，所以可以自由定制。</p>
+</li>
+<li><p><code># Footer Settings</code>项：脚注设置。可设置<code>since</code>建站时间，底部icon(也是FAI，可修改)，icon的动画，Powered by等信息。</p>
+</li>
+<li><p><code># Post Settings</code>项：博文设置。默认设置即可，令可设置打赏信息，<code>Donate</code>设置为<code>enable: true</code>，并在<code>reward</code>除加入收款二维码即可。</p>
+</li>
+<li><p><code># Misc Theme Settings</code>项：杂项设置。设置代码块主题和样式，比如<code>light: monokai</code>设置成<code>monokai</code>主题，<code>style: mac</code>设置成苹果<code>mac</code>样式；设置<code>Follow me on GitHub</code>，开启即可。NexT<a href="https://theme-next.js.org/highlight/">支持的主题</a>。</p>
+</li>
+<li><p><code># Font Settings</code>项：字体设置。可以分别设置全局、标题、文章、代码块等字体。</p>
+</li>
+</ul>
+<p>以上是常用自定义配置，其余配置不再细说，自行仔细阅读配置文件。</p>
+<hr>
+<h1 id="添加本地搜索"><a href="#添加本地搜索" class="headerlink" title="添加本地搜索"></a>添加本地搜索</h1><p><strong>主题</strong>配置文件中<code># Local Search</code>项开启<code>local_search</code>，即<code>enable: true</code>。</p>
+<p>安装环境依赖，命令行输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>然后生成并在本地端口查看：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>如果正常，可以在左侧边栏看到<code>Search</code>按钮，点击即可本地检索。</p>
+<hr>
+<h1 id="添加相册页"><a href="#添加相册页" class="headerlink" title="添加相册页"></a>添加相册页</h1><p>进一步个性化，我们可以在博客中新建一个相册页，用来记录分享生活有意思的事情。只需四个步骤：</p>
+<ul>
+<li>新建一个Page：取名photos（或其它），用来充当相册展示页面，输入命令：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">heox n page photos</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>为新的Page创建侧边栏菜单项：这个菜单项将会是相册进入路径，打开主题配置文件，在定义菜单的位置即<code>menu: </code>下面添加新Page的菜单项：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">photos: /photos/ || fa fa-camera <span class="comment"># 注：可换其它fa图标</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>编辑相册页：第一步生成了文件<code>source/photos/index.md</code>，这便是相册页，根据个人喜好插入图片编辑，下面举个例子：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: photos</span><br><span class="line">---</span><br><span class="line"><span class="comment"># 我的相册</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 相册1</span></span><br><span class="line">&#123;% gp 5-3 %&#125;</span><br><span class="line">  ![IMG-1.jpg](https://xxx.yyy.zzz.img1.jpg)</span><br><span class="line">  ![IMG-2.jpg](https://xxx.yyy.zzz.img2.jpg)</span><br><span class="line">  ![IMG-3.jpg](https://xxx.yyy.zzz.img3.jpg)</span><br><span class="line">  ![IMG-4.jpg](https://xxx.yyy.zzz.img4.jpg)</span><br><span class="line">  ![IMG-5.jpg](https://xxx.yyy.zzz.img5.jpg)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面采用图床的方式插入图片，这样的好处是网页和图片数据分离，网页本身加载速度会快很多，强烈推荐这种方式。</p>
+<p>免费的图床挺多的，当然付费的会更稳定。这里推荐一个很好用的免费图床，<a href="https://sm.ms/">SM.MS</a>，提供5G免费存储。</p>
+<p>注：上面Markdown中插入图片的方式是组方式，其它Markdown插图方式和Markdown高阶语法见博客，搜索即可。</p>
+<ul>
+<li>开启图片缩放插件：启用NexT内嵌的图像缩放插件，以允许放大图像。NexT提供了两个插件：<code>fanncybox</code>和<code>mediumzoom</code>，前者功能更加强大，而后者更加轻巧所以网页加载更快，按需选择。修改主题配置文件，如<code>fancybox: true</code>即可。</li>
+</ul>
+<p>相册页真的是一个很好的记录和展示的窗口，笔者博客的相册页效果如下图，是不是很棒呢</p>
+<p><img src="https://s2.loli.net/2022/05/03/mJz94IesG8qigH1.png" alt="photos.png"></p>
+<hr>
+<h1 id="开启评论系统"><a href="#开启评论系统" class="headerlink" title="开启评论系统"></a>开启评论系统</h1><p>一个好的博客，应该提供一个用于交互的评论区，NexT内嵌了7个插件用于支持评论区的搭建，可参考<a href="https://theme-next.js.org/docs/third-party-services/comments.html#Overview">官方教程</a>。值得注意的是，部分评论系统国内可能无法使用，需要翻墙。</p>
+<p>接下来以使用最为广泛的<code>Disqus</code>为例介绍搭建方法(Disqus需要翻墙，手动滑稽)。四个步骤：</p>
+<ul>
+<li>创建一个<a href="https://disqus.com/">Disqus账号</a>，登陆，点首页<code>GET STARTED</code>，点下面的<code>I want to install Disqus on my site</code>将会出现<code>Create a new site</code>界面：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/05/03/opIlkdu3vQRrgSW.png" alt="Disqus_create.png"></p>
+<ul>
+<li><p>输入<code>Website Name</code>作为你的Disqus简称，<strong>注意不需要和你的网站同名哦</strong>，只是为了用于区分的简称，然后选择一个<code>Category</code>和<code>Language</code>，然后点底部<code>Create Site</code>，然后选择一个套餐（可免费试用30天）</p>
+</li>
+<li><p>选择平台，由于Disqus没有为Hexo专门定制，所以选底部的<code>I don&#39;t see my platform listed, install manually with Universal Code</code>，然后可以自由配置，比如评论者的头像等等，配置完点<code>Complete Setup</code></p>
+</li>
+<li><p>最后配置NexT，修改主题配置文件如下：</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">disqus:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span> <span class="comment"># 开启</span></span><br><span class="line">  shortname: 你的Disqus网站简称</span><br><span class="line">  count: <span class="literal">true</span> <span class="comment"># 统计每个博文评论数，建议开启</span></span><br></pre></td></tr></table></figure>
+
+<p>其它NexT支持的评论系统的搭建类似，你那么聪明我就不一一展开啦。</p>
+<hr>
+<blockquote>
+<p>后话：</p>
+<p>参照建站系列的三篇博文，我们终于搭建起了足够个性化的博客主页，不管你是学术风还是二次元，都能搭建符合个性的网站。另一方面，我们还为我们的博客主页添加了很多功能，大大丰富了网站的功能，是不是很有意思呢！具体效果可以看我的<a href="https://brian-zzz.github.io/">博客</a>，下面附上效果图。</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2022/05/03/5WNDmMPLQni9e41.png" alt="brian_hp1.png"></p>
+<p>细心的你可能已经注意到主页侧边栏的音乐播放界面，没错，我们还能为我们的主页添加音乐播放插件，是不是很nice? 下一篇博文将介绍<strong>如何添加播放界面，也将是建站系列的终结结篇</strong>。</p>
+<p>本博客已同步至<a href="https://www.zhihu.com/people/brainzzz-52">笔者知乎</a>，<a href="https://zhuanlan.zhihu.com/p/508729481">文章链接</a>，欢迎关注。</p>
+]]></content>
+      <categories>
+        <category>Misc</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>建站</tag>
+        <tag>NexT</tag>
+        <tag>个性化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/04/27/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -19,30 +401,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>NexT详细配置</title>
-    <url>/2022/04/29/Hexo%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Just-some-text"><a href="#Just-some-text" class="headerlink" title="Just some text"></a>Just some text</h1><p>hhh</p>
-]]></content>
-      <categories>
-        <category>Misc</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>建站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NexT个性化配置</title>
-    <url>/2022/04/29/NexT%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Just-some-text"><a href="#Just-some-text" class="headerlink" title="Just some text"></a>Just some text</h1><p>hhh</p>
-]]></content>
-      <categories>
-        <category>Misc</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
   </entry>
 </search>

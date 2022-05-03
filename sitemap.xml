@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://brian-zzz.github.io/message/index.html</loc>
+    
+    <lastmod>2022-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://brian-zzz.github.io/2022/05/03/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E7%95%8C%E9%9D%A2/</loc>
     
     <lastmod>2022-05-03</lastmod>

@@ -1,7 +1,7 @@
-https://brian-zzz.github.io/2022/05/02/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/
-https://brian-zzz.github.io/2022/05/02/NexT%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/
 https://brian-zzz.github.io/2022/05/03/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E7%95%8C%E9%9D%A2/
 https://brian-zzz.github.io/2022/05/02/GitHub-Hexo%E5%BB%BA%E7%AB%99/
+https://brian-zzz.github.io/2022/05/02/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8C%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/
+https://brian-zzz.github.io/2022/05/02/NexT%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE/
 https://brian-zzz.github.io/2022/04/27/hello-world/
 https://brian-zzz.github.io/categories/index.html
 https://brian-zzz.github.io/tags/index.html

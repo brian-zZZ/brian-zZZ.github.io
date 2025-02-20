@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently work at [Huawei Technolgies](https://www.huawei.com/) as an AI engineer in Shanghai, China. My work focuses on the intelligent automated evaluation of Large Language Models (LLMs). I will become a PhD candidate at [School of Software and Microelectronics](https://www.ss.pku.edu.cn/), Peking University (北京大学软件与微电子学院) in the fall semester of 2025. My research interest includes LLMs, multimodality learning, representation learning, and transferability.
+I am currently work at [Huawei Technolgies](https://www.huawei.com/) as an AI engineer in Shanghai, China. My work focuses on the intelligent automated evaluation of Large Language Models (LLMs). I will become a PhD candidate at [School of Software and Microelectronics](https://www.ss.pku.edu.cn/), Peking University (北京大学软件与微电子学院) in the fall semester of 2025. My research interest includes `LLMs`, `multimodality learning`, `representation learning`, and `transferability`.
 
 I graduated from the [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) (中国科学院大学) with a Master's degree in Computer Technology, advised by [Yunpeng Cai](https://people.ucas.edu.cn/~caiyunpeng). I earned my bachelor’s degree at [College of Electronics and Information Engineering](https://ceie.szu.edu.cn/), Shenzhen University.
 
-As the first or co-first author, I have published four articles in top-tier journals or JCR Q1-ranked journals with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I have also presented a conference paper and published an invention patent.
+As the first or co-first author, I have published four articles in top-tier journals or JCR Q1-ranked journals with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I have also presented a conference paper and published an invention patent.
 
 
 # 🔥 News
@@ -90,7 +90,6 @@ Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin
 </div>
 </div>
 
-# 📝 Publication List
 
 - <span class='paper-badge'>ISBRA 2024</span> **A Transferability-guided Protein-ligand Interaction Prediction Method**<br>
   _<u><b>Weihong Zhang</b></u>, Fan Hu, Peng Yin, Yunpeng Cai_<br>

@@ -21,7 +21,8 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 
 # Site Author
 author:
-  name             : "Weihong Zhang (张维鸿)"
+  Englishname      : "Weihong Zhang"
+  Chinesename      : "(张维鸿)"
   avatar           : "images/brian_profile.jpg"
   bio              : "@Peking University"
   location         : "Beijing, China"

@@ -6,10 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title: "Jianping Zhou (周健平)"
-description: "Ph.D. candidate in Shanghai Jiao Tong University."
-repository: "JeremyChou28/JeremyChou28.github.io"
-google_scholar_stats_use_cdn: true
+title                    : "Weihong Zhang (张维鸿)"
+description              : "CS Master from UCAS. Focusing on LLMs, multimodality learning, and transferability."
+repository               : "brian-zZZ/brian-zzz.github.io"
+google_scholar_stats_use_cdn : true
 
 # google analytics
 google_analytics_id: # get google_analytics_id from https://analytics.google.com/analytics/
@@ -21,44 +21,46 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 
 # Site Author
 author:
-  Englishname: "Jianping Zhou"
-  Chinesename: "（周健平）"
-  avatar: "images/jianpingzhou.jpg"
-  # bio: "Shanghai Jiao Tong University"
-  location: "Shanghai, China"
-  employer:
-  pubmed:
-  googlescholar: "https://scholar.google.com/citations?user=3_wIk0EAAAAJ&hl=zh-CN"
-  email: "jianpingzhou0927@gmail.com"
-  researchgate: # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri:
-  bitbucket:
-  codepen:
-  dribbble:
-  flickr:
-  facebook:
-  foursquare:
-  github: "JeremyChou28"
-  google_plus:
-  keybase:
-  instagram:
-  impactstory: # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm:
-  linkedin: jianping-zhou-098b31210/
-  dblp: "https://dblp.org/pid/59/5184-4.html"
-  orcid: https://orcid.org/my-orcid?orcid=0009-0000-7161-2029
-  pinterest:
-  soundcloud:
-  stackoverflow: # http://stackoverflow.com/users/123456/username
-  steam:
-  tumblr:
-  twitter: JianpingZhou28
-  semanticscholar: author/Jianping-Zhou/2205243904
-  vine:
-  weibo:
-  xing:
-  youtube:
-  wikipedia:
+  name             : "Weihong Zhang"
+  Chinesename      : "(张维鸿)"
+  avatar           : "images/brian_profile.jpg"
+  bio              : "Huawei"
+  location         : "Beijing, China"
+  employer         :
+  pubmed           :
+  googlescholar    : "https://scholar.google.com/citations?user=P7wwiSMAAAAJ"
+  email            : "brian_zwh@163.com"
+  researchgate     : "https://www.researchgate.net/profile/Weihong-Zhang-5"
+  semanticscholar  : author/Weihong-Zhang/2218843793
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "brian-zZZ"
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  lastfm           :
+  linkedin         : # e.g., "linkedin username"
+  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0001-5495-158X"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
+
+
 
 # Reading Files
 include:

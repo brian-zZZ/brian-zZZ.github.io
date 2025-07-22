@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Weihong Zhang (张维鸿)"
-description              : "CS Master from UCAS. Focusing on LLMs, multimodality learning, and transferability."
+description              : "Ph.D. candidate at Peking University. Focusing on LLMs, multimodality learning, and transferability."
 repository               : "brian-zZZ/brian-zzz.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -29,7 +29,7 @@ author:
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=P7wwiSMAAAAJ"
-  email            : "brian_zwh@163.com"
+  email            : "weihongzhang25@stu.pku.edu.cn"
   researchgate     : "https://www.researchgate.net/profile/Weihong-Zhang-5"
   semanticscholar  : author/Weihong-Zhang/2218843793
   uri              : "https:///whongzhang.github.io"

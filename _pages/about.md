@@ -19,7 +19,7 @@ redirect_from:
 
 I am a PhD candidate at [School of Software and Microelectronics](https://www.ss.pku.edu.cn/), Peking University (北京大学-软件与微电子学院). My research interest includes `Large Language Models` and `Language Agents`.
 
-I graduated from the [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) (中国科学院大学) with a Master's degree in Computer Technology, advised by [Yunpeng Cai](https://people.ucas.edu.cn/~caiyunpeng). I earned my bachelor’s degree at [College of Electronics and Information Engineering](https://ceie.szu.edu.cn/), Shenzhen University.
+I graduated from the [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) (中国科学院大学) with a Master's degree in Computer Technology, advised by [Yunpeng Cai](https://people.ucas.edu.cn/~caiyunpeng).
 
 As the first or co-first author, I have published four articles in top-tier journals or JCR Q1-ranked journals with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I have also presented a conference paper and published an invention patent.
 

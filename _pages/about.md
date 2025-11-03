@@ -23,6 +23,7 @@ I graduated from the [University of Chinese Academy of Sciences](https://www.uca
 
 As the first or co-first author, I have published four articles in top-tier journals or JCR Q1-ranked journals with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I have also presented a conference paper and published an invention patent.
 
+I'm excited about the recent advances in language agents and am dedicated to exploring the boundaries of their capabilities. **If you are interested in academic collaboration or discussion, please do not hesitate to drop me an email**.
 
 # 🔥 News
 - *2025.02*: &nbsp;🎉🎉 My paper [A Transferability-guided Protein-ligand Interaction Prediction Method](https://doi.org/10.1016/j.ymeth.2025.01.019) is accepted by *Methods*.

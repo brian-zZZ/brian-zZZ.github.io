@@ -17,21 +17,22 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD candidate at [School of Software and Microelectronics](https://www.ss.pku.edu.cn/), Peking University (北京大学-软件与微电子学院). My research interest includes `Large Language Models` and `Language Agents`.
+I am Weihong Zhang, a PhD candidate at [School of Software and Microelectronics](https://www.ss.pku.edu.cn/), Peking University (北京大学). I am under the supervision of Professor [Wen Zhao](https://se.pku.edu.cn/ky/kyry/index.htm). My research interest includes `Self-evolving Agents` and `Large Language Models`.
 
-I graduated from the [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) (中国科学院大学) with a Master's degree in Computer Technology, advised by [Yunpeng Cai](https://people.ucas.edu.cn/~caiyunpeng).
+I graduated from the [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) (中国科学院大学) with a Master's degree in Computer Technology, advised by Professor [Yunpeng Cai](https://people.ucas.edu.cn/~caiyunpeng).
 
 As the first or co-first author, I have published four articles in top-tier journals or JCR Q1-ranked journals with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I have also presented a conference paper and published an invention patent.
 
 I'm excited about the recent advances in language agents and am dedicated to exploring the boundaries of their capabilities. **If you are interested in academic collaboration or discussion, please do not hesitate to drop me an email**.
 
 # 🔥 News
-- *2025.02*: &nbsp;🎉🎉 My paper [A Transferability-guided Protein-ligand Interaction Prediction Method](https://doi.org/10.1016/j.ymeth.2025.01.019) is accepted by *Methods*.
-- *2025.01*: &nbsp;🎉🎉 I have been admitted as a PhD student to the School of Software and Microelectronics, Peking University <img src='./images/pku_ss_logo.png' style='width: 6em;'>.
+- *2026.10*: &nbsp;🥇 I was honored to receive the National Scholarship for Doctoral Students at Peking University.
+- *2025.02*: &nbsp;🎉 My paper [A Transferability-guided Protein-ligand Interaction Prediction Method](https://doi.org/10.1016/j.ymeth.2025.01.019) is accepted by *Methods*.
+- *2025.01*: &nbsp;🎓 I have been admitted as a PhD student to the School of Software and Microelectronics, Peking University <img src='./images/pku_ss_logo.png' style='width: 6em;'>.
 
 
 # 📖 Educations
-- *2025.09 -*: PhD Candidate, School of Software and Microelectronics, Peking University <img src='./images/pku_words.png' style='width: 6em;'>.
+- *2025.09 - Now*: PhD Candidate, School of Software and Microelectronics, Peking University <img src='./images/pku_words.png' style='width: 6em;'>. (GPA: 3.97/4.0; **ranked 1st**)
 - *2021.09 - 2024.06*: Master, Shenzhen Institutes of Advanced Technology (SIAT), University of Chinese Academy of Sciences <img src='./images/ucas_words.png' style='width: 6em;'>.
 - *2017.07 - 2021.06*: Bachelor, College of Electronics and Information Engineering, Shenzhen University <img src='./images/szu_words.png' style='width: 6em;'>.
 
@@ -107,13 +108,10 @@ Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin
 - *2024.07*: The 20th International Symposium on Bioinformatics Research and Application (ISBRA 2024), Oral, Kunming, China.
 
 
-# 💻 Internships
-- *2024.07 - 2025.08*: <a href="https://www.huawei.com/"><img src='./images/huawei.png' width="23pt"></a> AI Engineer, Huawei Technologies Co., Ltd., Shanghai, China.
-- *2021.06 - 2021.08*: <a href="https://www.siat.ac.cn/"><img src='./images/siat.jpeg' width="23pt"></a> Research Intern, SIAT, Chinese Academy of Sciences, Shenzhen, China.
-
-
 # 🎖 Honors and Awards
-- *2024.07*: Merit Student of University of Chinese Academy of Sciences.
+- *2026.10*: Merit Student Pacesetter of Peking University (Top 2%, 北京大学三好学生标兵).
+- *2026.10*: National Scholarship at Peking University (Top 10%, 博士研究生国家奖学金).
+- *2024.07*: Merit Student of University of Chinese Academy of Sciences (Top 15%, 中国科学院大学三好学生).
 - *2024.04*: Outstanding Communist Youth League Member of Chinese Academy of Sciences (Guangzhou).
 - *2024.01*: SIAT President's Scholarship - Excellence Award.
 - *2023.02*: Outstanding Student at the BIT Center, SIAT, Chinese Academy of Sciences.
@@ -125,6 +123,12 @@ Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin
 - *2019.06*: Outstanding Volunteer Officer of Shenzhen University.
 - *2018.12*: Shenzhen University Public Service Star Scholarship.
 - *2018.10*: National Endeavor Scholarship.
+
+
+# 💻 Internships
+- *2024.07 - 2025.08*: <a href="https://www.huawei.com/"><img src='./images/huawei.png' width="23pt"></a> AI Engineer, Huawei Technologies Co., Ltd., Shanghai, China.
+- *2021.06 - 2021.08*: <a href="https://www.siat.ac.cn/"><img src='./images/siat.jpeg' width="23pt"></a> Research Intern, SIAT, Chinese Academy of Sciences, Shenzhen, China.
+
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=KKVQwhlxW3eaKbtrI8kx7IgDAyBI9TlARuKNBXIu9g0'></script>
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=KKVQwhlxW3eaKbtrI8kx7IgDAyBI9TlARuKNBXIu9g0&cl=ffffff&w=600"></script> -->

@@ -11,6 +11,11 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
+# Jekyll 3.9 and its local preview server load CSV and WEBrick. Ruby 3.4 no
+# longer exposes these standard-library gems inside Bundler unless declared.
+gem "csv"
+gem "webrick"
+
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.
 

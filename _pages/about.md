@@ -21,7 +21,7 @@ I am Weihong Zhang, a PhD candidate at [School of Software and Microelectronics]
 
 I graduated from the [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) (中国科学院大学) with a Master's degree in Computer Technology, advised by Professor [Yunpeng Cai](https://people.ucas.edu.cn/~caiyunpeng).
 
-As the first or co-first author, I have published four articles in top-tier journals or JCR Q1-ranked journals with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I have also presented a conference paper and published an invention patent.
+As the first or co-first author, I have published 4 articles in top-tier journals or JCR Q1-ranked journals such as Adv. Sci. and IEEE JBHI, with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>, including Adv. Sci., IEEE JBHI, and etc.. I have also presented a conference paper and published an invention patent.
 
 I'm excited about the recent advances in language agents and am dedicated to exploring the boundaries of their capabilities. **If you are interested in academic collaboration or discussion, please do not hesitate to drop me an email**.
 
@@ -45,7 +45,7 @@ I'm excited about the recent advances in language agents and am dedicated to exp
 [A Multimodal Protein Representation Framework for Quantifying Transferability Across Biochemical Downstream Tasks](https://doi.org/10.1002/advs.202301223)
 
 Fan Hu¹, Yishen Hu¹, **Weihong Zhang**¹, Huazhen Huang, Yi Pan, and Peng Yin
-> **¹: These authors contributed equally to this work** (the same hereafter).
+> **¹: Equal contributors**
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:u5HHmVD_uO8C'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/MASSA?style=social&label=Code+Stars)](https://github.com/SIAT-code/MASSA)
 - A SOTA multimodal deep learning framework for incorporating ≈1 million protein sequence, structure, and functional annotation (MASSA).
@@ -60,6 +60,7 @@ Fan Hu¹, Yishen Hu¹, **Weihong Zhang**¹, Huazhen Huang, Yi Pan, and Peng Yin
 [A Transferability-Based Method for Evaluating the Protein Representation Learning](https://doi.org/10.1109/JBHI.2024.3370680)
 
 Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin
+> **¹: Equal contributors**
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:9yKSN-GCB0IC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:9yKSN-GCB0IC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/OTMTD?style=social&label=Code+Stars)](https://github.com/SIAT-code/OTMTD)
 - A novel quantitative approach for estimating the performance of transferring multi-task pre-trained protein representations to downstream tasks.

@@ -44,8 +44,8 @@ I'm excited about the recent advances in language agents and am dedicated to exp
 
 [A Multimodal Protein Representation Framework for Quantifying Transferability Across Biochemical Downstream Tasks](https://doi.org/10.1002/advs.202301223)
 
-Fan Hu¹, Yishen Hu¹, **Weihong Zhang**¹, Huazhen Huang, Yi Pan, and Peng Yin \
-_Advanced Science_, 2023 (JCR-Q1, 中科院1区Top, IF=14.1)
+Fan Hu¹, Yishen Hu¹, **Weihong Zhang**¹, Huazhen Huang, Yi Pan, and Peng Yin<br>
+_Advanced Science_, 2023 (JCR-Q1, 中科院1区Top, IF=14.1)<br>
 > **¹: Equal contributors**
 
 [**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:u5HHmVD_uO8C'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/MASSA?style=social&label=Code+Stars)](https://github.com/SIAT-code/MASSA)
@@ -60,8 +60,8 @@ _Advanced Science_, 2023 (JCR-Q1, 中科院1区Top, IF=14.1)
 
 [A Transferability-Based Method for Evaluating the Protein Representation Learning](https://doi.org/10.1109/JBHI.2024.3370680)
 
-Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin \
-_IEEE Journal of Biomedical and Health Informatics_, 2024 (JCR-Q1, 中科院2区Top, IF=7.7)
+Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin<br>
+_IEEE Journal of Biomedical and Health Informatics_, 2024 (JCR-Q1, 中科院2区Top, IF=7.7)<br>
 > **¹: Equal contributors**
 
 [**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:9yKSN-GCB0IC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:9yKSN-GCB0IC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/OTMTD?style=social&label=Code+Stars)](https://github.com/SIAT-code/OTMTD)
@@ -75,8 +75,8 @@ _IEEE Journal of Biomedical and Health Informatics_, 2024 (JCR-Q1, 中科院2区
 
 [A Transferability-guided Protein-ligand Interaction Prediction Method](https://doi.org/10.1016/j.ymeth.2025.01.019)
 
-**Weihong Zhang**, Fan Hu, Peng Yin, Yunpeng Cai \
-_Methods_, 2025 (JCR-Q1)
+**Weihong Zhang**, Fan Hu, Peng Yin, Yunpeng Cai<br>
+_Methods_, 2025 (JCR-Q1)<br>
 
 [**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:2osOgNQ5qMEC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:2osOgNQ5qMEC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/brian-zZZ/Guided-PLI?style=social&label=Code+Stars)](https://github.com/brian-zZZ/Guided-PLI)
 - A novel transferability-guided PLI prediction method that maximizes knowledge transfer by deeply integrating protein and ligand representations through a cross-attention mechanism and incorporating transferability metrics to guide fine-tuning.
@@ -88,8 +88,8 @@ _Methods_, 2025 (JCR-Q1)
 
 [Does Protein Pretrained Language Model Facilitate the Prediction of Protein–ligand Interaction?](https://doi.org/10.1016/j.ymeth.2023.08.016)
 
-**Weihong Zhang**, Fan Hu, Wang Li, Peng Yin \
-_Methods_, 2023 (JCR-Q1)
+**Weihong Zhang**, Fan Hu, Wang Li, Peng Yin<br>
+_Methods_, 2023 (JCR-Q1)<br>
 
 [**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:u-x6o8ySG0sC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/brian-zZZ/PLM-PLI?style=social&label=Code+Stars)](https://github.com/brian-zZZ/PLM-PLI)
 - An approach that quantitatively evaluates the impact of protein pretrained language model (PLM) in protein–ligand interaction (PLI) predictions, which allows us to select the optimal PLM for a given downstream task without exhaustively testing each PLM, thus avoiding the costly computational expense. The mechanisms underlying the influence of protein PLMs on PLI tasks are explored.
@@ -134,5 +134,6 @@ _Methods_, 2023 (JCR-Q1)
 - *2021.06 - 2021.08*: <a href="https://www.siat.ac.cn/"><img src='./images/siat.jpeg' width="23pt"></a> Research Intern, SIAT, Chinese Academy of Sciences, Shenzhen, China.
 
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=KKVQwhlxW3eaKbtrI8kx7IgDAyBI9TlARuKNBXIu9g0'></script>
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=fdHAMZnqBiCxnRBSgEXQWLls8qPlC_1I9pbNbllqUis&cl=ffffff&w=600"></script>
+<!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=KKVQwhlxW3eaKbtrI8kx7IgDAyBI9TlARuKNBXIu9g0'></script> -->
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=KKVQwhlxW3eaKbtrI8kx7IgDAyBI9TlARuKNBXIu9g0&cl=ffffff&w=600"></script> -->

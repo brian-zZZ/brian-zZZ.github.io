@@ -39,15 +39,16 @@ I'm excited about the recent advances in language agents and am dedicated to exp
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Advanced Science</div><img src='images/Adv.Sci._2023.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Adv. Sci.</div><img src='images/Adv.Sci._2023.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [A Multimodal Protein Representation Framework for Quantifying Transferability Across Biochemical Downstream Tasks](https://doi.org/10.1002/advs.202301223)
 
-Fan Hu¹, Yishen Hu¹, **Weihong Zhang**¹, Huazhen Huang, Yi Pan, and Peng Yin
+Fan Hu¹, Yishen Hu¹, **Weihong Zhang**¹, Huazhen Huang, Yi Pan, and Peng Yin \
+_Advanced Science_, 2023 (JCR-Q1, 中科院1区Top, IF=14.1)
 > **¹: Equal contributors**
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:u5HHmVD_uO8C'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/MASSA?style=social&label=Code+Stars)](https://github.com/SIAT-code/MASSA)
+[**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:u5HHmVD_uO8C'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/MASSA?style=social&label=Code+Stars)](https://github.com/SIAT-code/MASSA)
 - A SOTA multimodal deep learning framework for incorporating ≈1 million protein sequence, structure, and functional annotation (MASSA).
 - Academic Impact: This work is promoted by [DrugAI](https://mp.weixin.qq.com/s/YFk9OVoHqAZNwkXpx41LQw).
 </div>
@@ -59,24 +60,12 @@ Fan Hu¹, Yishen Hu¹, **Weihong Zhang**¹, Huazhen Huang, Yi Pan, and Peng Yin
 
 [A Transferability-Based Method for Evaluating the Protein Representation Learning](https://doi.org/10.1109/JBHI.2024.3370680)
 
-Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin
+Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin \
+_IEEE Journal of Biomedical and Health Informatics_, 2024 (JCR-Q1, 中科院2区Top, IF=7.7)
 > **¹: Equal contributors**
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:9yKSN-GCB0IC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:9yKSN-GCB0IC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/OTMTD?style=social&label=Code+Stars)](https://github.com/SIAT-code/OTMTD)
+[**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:9yKSN-GCB0IC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:9yKSN-GCB0IC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/SIAT-code/OTMTD?style=social&label=Code+Stars)](https://github.com/SIAT-code/OTMTD)
 - A novel quantitative approach for estimating the performance of transferring multi-task pre-trained protein representations to downstream tasks.
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Methods</div><img src='images/Methods_2023.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Does Protein Pretrained Language Model Facilitate the Prediction of Protein–ligand Interaction?](https://doi.org/10.1016/j.ymeth.2023.08.016)
-
-**Weihong Zhang**, Fan Hu, Wang Li, Peng Yin
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:u-x6o8ySG0sC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/brian-zZZ/PLM-PLI?style=social&label=Code+Stars)](https://github.com/brian-zZZ/PLM-PLI)
-- An approach that quantitatively evaluates the impact of protein pretrained language model (PLM) in protein–ligand interaction (PLI) predictions, which allows us to select the optimal PLM for a given downstream task without exhaustively testing each PLM, thus avoiding the costly computational expense. The mechanisms underlying the influence of protein PLMs on PLI tasks are explored.
 </div>
 </div>
 
@@ -86,10 +75,24 @@ Fan Hu¹, **Weihong Zhang**¹, Huazhen Huang, Wang Li, Yang Li, Peng Yin
 
 [A Transferability-guided Protein-ligand Interaction Prediction Method](https://doi.org/10.1016/j.ymeth.2025.01.019)
 
-**Weihong Zhang**, Fan Hu, Peng Yin, Yunpeng Cai
+**Weihong Zhang**, Fan Hu, Peng Yin, Yunpeng Cai \
+_Methods_, 2025 (JCR-Q1)
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:2osOgNQ5qMEC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:2osOgNQ5qMEC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/brian-zZZ/Guided-PLI?style=social&label=Code+Stars)](https://github.com/brian-zZZ/Guided-PLI)
+[**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:2osOgNQ5qMEC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:2osOgNQ5qMEC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/brian-zZZ/Guided-PLI?style=social&label=Code+Stars)](https://github.com/brian-zZZ/Guided-PLI)
 - A novel transferability-guided PLI prediction method that maximizes knowledge transfer by deeply integrating protein and ligand representations through a cross-attention mechanism and incorporating transferability metrics to guide fine-tuning.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Methods</div><img src='images/Methods_2023.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Does Protein Pretrained Language Model Facilitate the Prediction of Protein–ligand Interaction?](https://doi.org/10.1016/j.ymeth.2023.08.016)
+
+**Weihong Zhang**, Fan Hu, Wang Li, Peng Yin \
+_Methods_, 2023 (JCR-Q1)
+
+[**Paper**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P7wwiSMAAAAJ&citation_for_view=P7wwiSMAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='P7wwiSMAAAAJ:u-x6o8ySG0sC'></span></strong> \| [![**GitHub Repository**](https://img.shields.io/github/stars/brian-zZZ/PLM-PLI?style=social&label=Code+Stars)](https://github.com/brian-zZZ/PLM-PLI)
+- An approach that quantitatively evaluates the impact of protein pretrained language model (PLM) in protein–ligand interaction (PLI) predictions, which allows us to select the optimal PLM for a given downstream task without exhaustively testing each PLM, thus avoiding the costly computational expense. The mechanisms underlying the influence of protein PLMs on PLI tasks are explored.
 </div>
 </div>
 

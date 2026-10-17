@@ -21,7 +21,7 @@ I am Weihong Zhang, a PhD candidate at [School of Software and Microelectronics]
 
 I graduated from the [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) (中国科学院大学) with a Master's degree in Computer Technology, advised by Professor [Yunpeng Cai](https://people.ucas.edu.cn/~caiyunpeng).
 
-As the first or co-first author, I have published 4 articles in top-tier journals or JCR Q1-ranked journals such as Adv. Sci. and IEEE JBHI, with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>, including Adv. Sci., IEEE JBHI, and etc.. I have also presented a conference paper and published an invention patent.
+As the first or co-first author, I have published 4 articles in top-tier journals or JCR Q1-ranked journals such as Adv. Sci. and IEEE JBHI, with total <a href='https://scholar.google.com/citations?user=P7wwiSMAAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FBrian-zZZ%2Fbrian-zzz.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. I have also presented a conference paper and published an invention patent.
 
 I'm excited about the recent advances in language agents and am dedicated to exploring the boundaries of their capabilities. **If you are interested in academic collaboration or discussion, please do not hesitate to drop me an email**.
 
